@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box !important;
+}
+:root {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  box-sizing: border-box !important;
+  font-family: 'Inter', serif;
+  color: #000;
+  --first-1: #f6fffb;
+  --first-2: #81b89d;
+  --first-3: #049951;
+  --second-1: #3b3b3b;
+  --second-2: #070707;
+  --second-3: #000000;
+  --third-100: #ffffff;
+  --third-200: #f8f8f8;
+}
+/*
+@media (max-width: 1400px) {
+}
+@media (max-width: 1280px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+}
+@media (max-width: 400px) {
+}
+*/
+body {
+  position: relative;
+}
+.btn:hover {
+  cursor: pointer;
+  filter: brightness(0.95);
+  transform: scale(0.97);
+}
+.btn:active {
+  filter: brightness(0.93);
+  transform: scale(0.95);
+}
+/*END BTNS*/
+/*SWIPER*/
+
+.swiper-global {
+  display: grid;
+  grid-template-columns: 7rem calc(100% - 14rem) 7rem;
+  align-items: center;
+}
+.swiper {
+  width: 100%;
+  grid-column: 2/3;
+}
+.swiper-global .button-prev img {
+  animation: buttonPrev 1s ease-in-out infinite;
+}
+.swiper-global .button-next img {
+  transform: rotate(180deg);
+  animation: buttonNext 1s ease-in-out infinite;
+}
+.swiper-global .button-next img,
+.swiper-global .button-prev img {
+  width: 4rem;
+  margin: 1.5rem;
+}
+.swiper-global .button-next:hover,
+.swiper-global .button-prev:hover {
+  cursor: pointer;
+}
+@media (max-width: 576px) {
+  .swiper-global {
+    grid-template-columns: 4rem calc(100% - 8rem) 4rem;
+  }
+  .swiper-global .button-next img,
+  .swiper-global .button-prev img {
+    width: 3rem;
+    margin: 0.5rem;
+  }
+}
+/*END SWIPER*/
+
+@media (max-width: 1400px) {
+}
+@media (max-width: 1280px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+}
+@media (max-width: 400px) {
+}
+
+footer {
+  background-color: var(--first-3);
+  border: 1px solid red;
+  padding: 7.5rem 0 3.2rem 0;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+footer .logo-footer {
+  width: 20rem;
+}
+footer h2 {
+  color: var(--third-200);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+footer .footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer .footer-menu a {
+  color: var(--third-200);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
