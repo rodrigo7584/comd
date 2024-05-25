@@ -1,7 +1,6 @@
 /*header*/
 .main-menu {
   position: relative;
-  background-color: var(--first-3);
 }
 header {
   width: 100%;
@@ -21,7 +20,7 @@ header nav ul {
 }
 header nav li a {
   font-size: 1.6rem;
-  color: var(--third-100);
+  color: var(--third-1);
   font-weight: 700;
 }
 header nav li a:hover {

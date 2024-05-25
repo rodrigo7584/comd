@@ -1,0 +1,86 @@
+.hero {
+  margin-top: -12.3rem;
+  padding: calc(10rem + 12.3rem) 0 10rem 0;
+  background: url('../img/bg-hero.svg'), var(--first-3);
+  background-repeat: no-repeat;
+  background-size: 60%, 100% 100%;
+  background-position: 93% 23%, center;
+  animation: 2.5s herobg ease-in-out infinite;
+}
+.hero .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+.hero .content {
+  width: 58rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.6rem;
+}
+.hero .users {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 2.2rem;
+}
+.hero .users ul {
+  display: flex;
+  margin-left: 1.2rem;
+}
+.hero .users ul li {
+  margin-left: -1.2rem;
+}
+.hero .users ul li img {
+  width: 5.2rem;
+}
+.hero .users span {
+  color: var(--third-1);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.hero h1 {
+  color: var(--third-1);
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: normal;
+}
+.hero h1 span {
+  position: relative;
+  z-index: 1;
+}
+.hero h1 span::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1rem;
+  background: var(--first-2);
+  bottom: 0.8rem;
+  left: 0;
+  z-index: -1;
+}
+.hero .stores {
+  display: flex;
+  gap: 2.5rem;
+}
+.hero .image {
+  display: flex;
+  justify-content: center;
+}
+.hero .image img {
+  width: 51.2rem;
+}
+@keyframes herobg {
+  0% {
+    background-size: 60%, 100% 100%;
+    background-position: 93% 23%, center;
+  }
+  50% {
+    background-size: 58%, 100% 100%;
+    background-position: 91% 21%, center;
+  }
+  100% {
+    background-size: 60%, 100% 100%;
+    background-position: 93% 23%, center;
+  }
+}
