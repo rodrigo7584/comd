@@ -61,6 +61,7 @@
 }
 .hero .stores {
   display: flex;
+  justify-content: flex-start;
   gap: 2.5rem;
 }
 .hero .image {

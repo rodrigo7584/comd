@@ -40,13 +40,28 @@ p {
   font-size: 2rem;
   font-weight: 400;
   line-height: 135%;
+  margin-bottom: 3rem;
+}
+p span{
+  font-weight: 700;
+}
+.subtitle{
+  color: var(--first-3);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.title{
+  color: var(--second-2);
+  font-size: 5.6rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
 }
 
 /* BTNS*/
 .btn-black {
   padding: 1.7rem 3rem;
   background: var(--second-2);
-  width: fit-content;
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -56,6 +71,20 @@ p {
   font-weight: 700;
 }
 .btn-black img {
+  width: 2.4rem;
+}
+.btn-green {
+  padding: 1.7rem 3rem;
+  background: var(--first-3);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  border-radius: 1.2rem;
+  color: var(--third-1);
+  font-size: 16px;
+  font-weight: 700;
+}
+.btn-green img {
   width: 2.4rem;
 }
 .btn:hover {
@@ -70,7 +99,7 @@ p {
 /*END BTNS*/
 /*SWIPER*/
 
-.swiper-global {
+.swiper-comd {
   display: grid;
   grid-template-columns: 7rem calc(100% - 14rem) 7rem;
   align-items: center;
@@ -79,28 +108,28 @@ p {
   width: 100%;
   grid-column: 2/3;
 }
-.swiper-global .button-prev img {
+.swiper-comd .button-prev img {
   animation: buttonPrev 1s ease-in-out infinite;
 }
-.swiper-global .button-next img {
+.swiper-comd .button-next img {
   transform: rotate(180deg);
   animation: buttonNext 1s ease-in-out infinite;
 }
-.swiper-global .button-next img,
-.swiper-global .button-prev img {
+.swiper-comd .button-next img,
+.swiper-comd .button-prev img {
   width: 4rem;
   margin: 1.5rem;
 }
-.swiper-global .button-next:hover,
-.swiper-global .button-prev:hover {
+.swiper-comd .button-next:hover,
+.swiper-comd .button-prev:hover {
   cursor: pointer;
 }
 @media (max-width: 576px) {
-  .swiper-global {
+  .swiper-comd {
     grid-template-columns: 4rem calc(100% - 8rem) 4rem;
   }
-  .swiper-global .button-next img,
-  .swiper-global .button-prev img {
+  .swiper-comd .button-next img,
+  .swiper-comd .button-prev img {
     width: 3rem;
     margin: 0.5rem;
   }
@@ -118,4 +147,28 @@ p {
 @media (max-width: 576px) {
 }
 @media (max-width: 400px) {
+}
+
+.about{
+  padding: 7rem 0;
+}
+.about .row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .image{
+  width: 48rem;
+  height: 58rem;
+}
+.about .content{
+  width: 64rem;
+}
+.about p{
+  color: #505050;
+}
+.about .stores{
+  display: flex;
+  justify-content: flex-start;
+  gap: 2.5rem;
 }
