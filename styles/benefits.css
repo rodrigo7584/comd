@@ -1,0 +1,53 @@
+
+.benefits {
+  padding: 7rem 0;
+  background-color: var(--first-3);
+  background-image: url('../img/bg-hero-2.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 130%;
+}
+.benefits .title,
+.benefits .subtitle,
+.benefits .text-title{
+  text-align: center;
+  color: var(--first-1);
+}
+.benefits .title{
+  font-size: 4rem;
+  width: 71rem;
+  margin: 0 auto 1.4rem auto;
+}
+.benefits .text-title{
+  width: 61rem;
+  margin: 0 auto;
+}
+.benefits .boxes{
+  width: 100rem;
+  margin: 5rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.9rem;
+}
+.benefits .box{
+  border-radius: 0.8rem;
+  background-color: var(--third-1);
+  padding: 4rem 3rem;
+}
+.benefits .box .icon{
+  width: 4rem;
+  margin-bottom: 2rem;
+}
+.benefits .box .box-title{
+  color: var(--first-3);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 140%;
+  margin-bottom: 1rem;
+}
+.benefits .box p{
+  color: var(--second-2);
+  font-weight: 400;
+  line-height: normal;
+  font-size: 1.6rem;
+}

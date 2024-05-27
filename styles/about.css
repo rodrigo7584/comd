@@ -1,0 +1,32 @@
+.about{
+  padding: 7rem 0;
+}
+.about .row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .image{
+  position: relative;
+  overflow: hidden;
+  display: block;
+  border-radius: 8px;
+  width: 48rem;
+  height: 58rem;
+}
+.about .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about .content{
+  width: 64rem;
+}
+.about p{
+  color: #505050;
+}
+.about .stores{
+  display: flex;
+  justify-content: flex-start;
+  gap: 2.5rem;
+}
