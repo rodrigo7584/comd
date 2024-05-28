@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 4rem;
 }
 .about .image{
   position: relative;
@@ -29,4 +30,15 @@
   display: flex;
   justify-content: flex-start;
   gap: 2.5rem;
+}
+@media (max-width: 1200px) {
+  .about{
+    padding: 5rem 0;
+  }
+  .about .content {
+    width: 56rem;
+  }
+  .about .image {
+    width: 35rem;
+  }
 }

@@ -1,10 +1,10 @@
 .hero {
   margin-top: -12.3rem;
   padding: calc(10rem + 12.3rem) 0 10rem 0;
-  background: url('../img/bg-hero.svg'), var(--first-3);
+  background: url(../img/bg-hero.svg), var(--first-3);
   background-repeat: no-repeat;
-  background-size: 60%, 100% 100%;
-  background-position: 93% 23%, center;
+  background-size: 57vw 55vw, 100% 100%;
+  background-position: 41vw 50%, center;
   animation: 2.5s herobg ease-in-out infinite;
 }
 .hero .row {
@@ -67,21 +67,34 @@
 .hero .image {
   display: flex;
   justify-content: center;
-}
-.hero .image img {
+  align-items: center;
   width: 51.2rem;
 }
+.hero .image img {
+  width: 100%;
+}
+@media (max-width: 1200px) {
+  .hero {
+    padding: calc(5rem + 12.3rem) 0 10rem 0;
+    background-position: 50vw 74%, center;
+  }
+  .hero .content {
+    width: 54rem;
+  }
+  .hero .image {
+    width: 100%;
+  }
+}
+
 @keyframes herobg {
   0% {
-    background-size: 60%, 100% 100%;
-    background-position: 93% 23%, center;
+    background-size: 57vw 55vw, 100% 100%;
   }
   50% {
-    background-size: 58%, 100% 100%;
-    background-position: 91% 21%, center;
+    background-size: 55vw 53vw, 100% 100%;
+
   }
   100% {
-    background-size: 60%, 100% 100%;
-    background-position: 93% 23%, center;
+    background-size: 57vw 55vw, 100% 100%;
   }
 }

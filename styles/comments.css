@@ -43,3 +43,11 @@
   font-weight: 400;
   line-height: 140%;
 }
+@media (max-width: 1200px) {
+  .comments {
+    padding: 5rem 0;
+  }
+  .comments .swiper-comments {
+    margin: 5rem 0 0 0;
+  }
+}

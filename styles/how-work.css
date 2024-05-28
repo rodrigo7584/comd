@@ -49,3 +49,15 @@
   justify-content: center;
   gap: 2.5rem;
 }
+@media (max-width: 1200px) {
+  .how-work {
+    padding: 5rem 0;
+  }
+  .how-work .steps {
+    margin: 5rem 0;
+  }
+  .how-work .step,
+  .how-work .steps {
+    gap: 2rem;
+  }
+}

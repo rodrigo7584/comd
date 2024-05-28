@@ -41,3 +41,8 @@
   border-radius: 10rem;
   background-color: var(--first-1);
 }
+@media (max-width: 1200px) {
+  .sellers {
+    padding: 5rem 0;
+  }
+}

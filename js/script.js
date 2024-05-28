@@ -27,7 +27,8 @@ function initAccordion() {
           answer.style.maxHeight = 0
           item.classList.remove('open')
         } else {
-          answer.style.maxHeight = answer.querySelector('.content').scrollHeight + 'px'
+          answer.style.maxHeight =
+            answer.querySelector('.content').scrollHeight + 'px'
           item.classList.add('open')
         }
       })
@@ -47,11 +48,19 @@ const swiperApp = new Swiper('.swiper-app .swiper', {
 })
 const swiperComments = new Swiper('.swiper-comments .swiper', {
   loop: true,
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 20,
   navigation: {
     nextEl: '.swiper-comments .button-next',
     prevEl: '.swiper-comments .button-prev'
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 2
+    },
+    1200: {
+      slidesPerView: 3
+    }
   }
 })
 /*SWIPER */
