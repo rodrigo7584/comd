@@ -227,7 +227,7 @@ p span {
   top: 50%;
 }
 .doubt::after {
-  left: 10%;
+  right: 6%;
   top: 50%;
 }
 .doubt .row {
