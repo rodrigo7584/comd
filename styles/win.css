@@ -1,0 +1,26 @@
+.win .row {
+  background: url(../img/bg-green.svg), url(../img/bg-folder.svg);
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  background-size: 69rem, 100% 100%;
+  background-position: calc(100% - -10rem) calc(100% - -20rem), center;
+  display: flex;
+  align-items: center;
+  padding: 0 10rem;
+  gap: 12rem;
+}
+.win .content {
+  width: 43rem;
+}
+.win .title {
+  color: var(--third-1);
+}
+.win .p {
+  color: var(--third-1);
+}
+.win .image {
+  width: 60rem;
+}
+.win .image img {
+  max-width: 100%;
+}

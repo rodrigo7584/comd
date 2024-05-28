@@ -1,0 +1,43 @@
+.sellers {
+  padding: 7rem 0;
+}
+.sellers .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sellers .image {
+  width: 46.5rem;
+}
+.sellers .image img {
+  width: 100%;
+}
+.sellers .content {
+  width: 65rem;
+}
+.sellers .content p {
+  color: #505050;
+}
+.sellers .list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.sellers .list li {
+  display: grid;
+  grid-template-columns: 4.1rem 1fr;
+  gap: 3.3rem;
+}
+.sellers .list-title {
+  color: var(--first-3);
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+}
+.sellers .list img {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 10rem;
+  background-color: var(--first-1);
+}

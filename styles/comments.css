@@ -1,0 +1,45 @@
+.comments {
+  padding: 7rem 0;
+}
+.comments .title,
+.comments .subtitle {
+  text-align: center;
+}
+.comments .swiper-comments {
+  margin: 5rem 0;
+}
+.comments .swiper-conteudo {
+  padding: 3rem;
+  border-radius: 22px;
+  border: 1px solid #e3e3e3;
+}
+.comments .client-info {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 3rem;
+}
+.comments .client-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #170f49;
+  margin-bottom: 1rem;
+}
+.comments .client-company {
+  color: #6f6c90;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.comments .comment-title {
+  color: var(--first-3);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+.comments .comment {
+  color: #505050;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 140%;
+}

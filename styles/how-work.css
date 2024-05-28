@@ -1,0 +1,51 @@
+.how-work {
+  padding: 7rem 0;
+}
+.how-work .title,
+.how-work .subtitle {
+  text-align: center;
+}
+.how-work .steps {
+  margin: 12rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12rem;
+}
+.how-work .step {
+  display: grid;
+  grid-template-columns: 16rem 1fr;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5.5rem;
+}
+.how-work .step img {
+  width: 100%;
+}
+.how-work .step .icon {
+  color: var(--third-1);
+  font-size: 3.6rem;
+  font-weight: 700;
+  background-color: #05b862;
+  width: 10.9rem;
+  height: 10.9rem;
+  border-radius: 10rem;
+  border: 1.4rem solid #effff7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.how-work .step .step-title {
+  color: var(--first-3);
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.3rem;
+}
+.how-work .step p {
+  color: #505050;
+}
+.how-work .stores {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
