@@ -31,10 +31,26 @@
 }
 @media (max-width: 1200px) {
   .win .row {
-    padding: 0 5em;
+    padding: 0 5rem;
     gap: 5rem;
   }
   .win .title {
     font-size: 4.9rem;
+  }
+}
+@media (max-width: 992px) {
+  .win .row {
+    padding: 12rem 3rem 0 3rem;
+    flex-direction: column;
+    background-size: 65rem 65rem, 100% 100%;
+    background-position: calc(100% - -10rem) calc(100% - -20rem), center;
+    gap: 0;
+  }
+  .win .content {
+    width: 100%;
+  }
+  .win .image {
+    width: 40rem;
+    justify-content: center;
   }
 }

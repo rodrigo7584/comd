@@ -42,3 +42,16 @@
     width: 35rem;
   }
 }
+@media (max-width: 992px) {
+  .about .row{
+    flex-direction: column;
+  }
+  .about .content {
+    width: 100%;
+    order: 1;
+  }
+  .about .image{
+    order: 2;
+    width: 50rem;
+  }
+}

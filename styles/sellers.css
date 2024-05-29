@@ -46,3 +46,15 @@
     padding: 5rem 0;
   }
 }
+@media (max-width: 992px) {
+  .sellers .row {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .sellers .content {
+    width: 100%;
+  }
+  .sellers .image {
+    order: 2;
+  }
+}
