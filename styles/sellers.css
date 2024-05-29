@@ -58,3 +58,17 @@
     order: 2;
   }
 }
+@media (max-width: 576px) {
+  .sellers {
+    padding: 2rem 0;
+  }
+  .sellers .row {
+    gap: 3rem;
+  }
+  .sellers .image {
+    width: 100%;
+  }
+  .sellers .list li {
+    gap: 1.3rem;
+  }
+}

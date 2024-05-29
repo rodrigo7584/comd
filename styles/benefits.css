@@ -8,43 +8,43 @@
 }
 .benefits .title,
 .benefits .subtitle,
-.benefits .text-title{
+.benefits .text-title {
   text-align: center;
   color: var(--first-1);
 }
-.benefits .title{
+.benefits .title {
   font-size: 4rem;
   width: 71rem;
   margin: 0 auto 1.4rem auto;
 }
-.benefits .text-title{
+.benefits .text-title {
   width: 61rem;
   margin: 0 auto;
 }
-.benefits .boxes{
+.benefits .boxes {
   width: 100rem;
   margin: 5rem auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.9rem;
 }
-.benefits .box{
+.benefits .box {
   border-radius: 0.8rem;
   background-color: var(--third-1);
   padding: 4rem 3rem;
 }
-.benefits .box .icon{
+.benefits .box .icon {
   width: 4rem;
   margin-bottom: 2rem;
 }
-.benefits .box .box-title{
+.benefits .box .box-title {
   color: var(--first-3);
   font-size: 2rem;
   font-weight: 700;
   line-height: 140%;
   margin-bottom: 1rem;
 }
-.benefits .box p{
+.benefits .box p {
   color: var(--second-2);
   font-weight: 400;
   line-height: normal;
@@ -61,5 +61,33 @@
 @media (max-width: 992px) {
   .benefits .boxes {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .benefits .title,
+  .benefits .text-title {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .benefits .boxes {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 576px) {
+  .benefits {
+    padding: 4rem 0;
+  }
+  .benefits .title {
+    font-size: 2.8rem;
+  }
+  .benefits .box {
+    padding: 2rem 2rem;
+  }
+  .benefits .boxes {
+    margin: 3rem auto 0 auto;
+  }
+  .benefits .box .icon {
+    margin-bottom: 1rem;
   }
 }

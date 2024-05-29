@@ -52,7 +52,6 @@ header .btn-mobile-menu {
     overflow: hidden;
     z-index: 99;
     background: var(--first-3);
-    border: 1px solid red;
     border-radius: 0.5rem 0 0 0.5rem;
     height: auto;
     transform: scaleX(0);

@@ -51,3 +51,19 @@
     margin: 5rem 0 0 0;
   }
 }
+@media (max-width: 576px) {
+  .comments {
+    padding: 2rem 0;
+  }
+}
+@media (max-width: 400px) {
+  .title {
+    font-size: 3.5rem;
+  }
+  .comments .swiper-conteudo {
+    padding: 1.5rem;
+  }
+  .comments .comment {
+    font-size: 1.6rem;
+  }
+}

@@ -33,3 +33,15 @@
   filter: brightness(0) saturate(100%) invert(87%) sepia(2%) saturate(167%) hue-rotate(33deg)
     brightness(91%) contrast(85%);
 }
+@media (max-width: 576px) {
+  .next .detail {
+    height: 7rem;
+  }
+  .next .detail a {
+    width: 5.4rem;
+    height: 5.4rem;
+  }
+  .next .detail img {
+    height: 2rem;
+  }
+}

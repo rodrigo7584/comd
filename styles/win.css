@@ -54,3 +54,37 @@
     justify-content: center;
   }
 }
+@media (max-width: 576px) {
+  .win .row {
+    background: none;
+    padding: 0 1rem;
+  }
+  .win .title {
+    font-size: 4rem;
+  }
+  .win .content {
+    background: url(../img/bg-folder.svg);
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    padding: 7rem 2rem 1rem 2rem;
+    margin-bottom: 2rem;
+  }
+  .win .image {
+    background: url(../img/bg-green.svg);
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-size: 100% 55rem;
+    background-position: 0rem 3rem;
+    width: 100%;
+  }
+  .win .image img {
+    max-width: 80%;
+  }
+}
+@media (max-width: 400px) {
+  .win .title {
+    font-size: 3.5rem;
+  }
+}

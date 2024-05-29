@@ -1,13 +1,13 @@
-.about{
+.about {
   padding: 7rem 0;
 }
-.about .row{
+.about .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 4rem;
 }
-.about .image{
+.about .image {
   position: relative;
   overflow: hidden;
   display: block;
@@ -20,19 +20,19 @@
   height: 100%;
   object-fit: cover;
 }
-.about .content{
+.about .content {
   width: 64rem;
 }
-.about p{
+.about p {
   color: #505050;
 }
-.about .stores{
+.about .stores {
   display: flex;
   justify-content: flex-start;
   gap: 2.5rem;
 }
 @media (max-width: 1200px) {
-  .about{
+  .about {
     padding: 5rem 0;
   }
   .about .content {
@@ -43,15 +43,34 @@
   }
 }
 @media (max-width: 992px) {
-  .about .row{
+  .about .row {
     flex-direction: column;
   }
   .about .content {
     width: 100%;
     order: 1;
   }
-  .about .image{
+  .about .image {
     order: 2;
     width: 50rem;
+  }
+}
+@media (max-width: 768px) {
+  .about .image {
+    order: 2;
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .about {
+    padding: 2rem 0;
+  }
+  .about .stores {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .about .image {
+    height: 35rem;
   }
 }

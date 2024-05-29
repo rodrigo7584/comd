@@ -2,6 +2,7 @@
   position: relative;
   padding: 7rem 0;
   background-color: var(--second-3);
+  overflow: hidden;
 }
 .doubt::after,
 .doubt::before {
@@ -20,6 +21,8 @@
   top: 50%;
 }
 .doubt .row {
+  position: relative;
+  z-index: 5;
   width: 44rem;
   margin: 0 auto;
   display: flex;
@@ -31,4 +34,14 @@
 .doubt .btn-green {
   color: var(--third-1);
   text-align: center;
+}
+@media (max-width: 1200px) {
+  .doubt {
+    padding: 5rem 0;
+  }
+}
+@media (max-width: 576px) {
+  .doubt .row {
+    width: 100%;
+  }
 }

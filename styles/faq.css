@@ -60,7 +60,7 @@
 .faq .image {
   width: 55rem;
 }
-.faq .image img{
+.faq .image img {
   width: 100%;
 }
 @media (max-width: 1200px) {
@@ -69,5 +69,28 @@
   }
   .faq .row {
     gap: 4rem;
+  }
+}
+@media (max-width: 992px) {
+  .faq .row {
+    flex-direction: column;
+  }
+  .faq .image {
+    width: 40rem;
+  }
+}
+@media (max-width: 576px) {
+  .faq .accordion .question p {
+    font-size: 1.7rem;
+  }
+  .faq .accordion .answer p {
+    font-size: 1.6rem;
+  }
+  .faq .image {
+    display: flex;
+    justify-content: center;
+  }
+  .faq .image img {
+    width: 75%;
   }
 }

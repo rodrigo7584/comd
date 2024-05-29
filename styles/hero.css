@@ -98,13 +98,13 @@
   }
 }
 @media (max-width: 992px) {
-  .hero{
+  .hero {
     background-position: center 100%, center;
     background-size: 100vw 100vw, 100% 100%;
   }
   .hero .row {
     grid-template-columns: 1fr;
-    gap:10rem 
+    gap: 10rem;
   }
   .hero .content {
     width: 100%;
@@ -122,5 +122,41 @@
     100% {
       background-size: 100vw 100vw, 100% 100%;
     }
+  }
+}
+@media (max-width: 768px) {
+  .hero .image img {
+    width: 95%;
+  }
+}
+@media (max-width: 576px) {
+  .hero {
+    padding: calc(5rem + 9.3rem) 0 10rem 0;
+  }
+  .hero .row {
+    gap: 5rem;
+  }
+  .hero h1 {
+    font-size: 4.5rem;
+  }
+  .hero p {
+    margin: 0;
+  }
+  .hero .users {
+    margin-bottom: 0;
+    gap: 0.5rem;
+  }
+  .hero .users ul li img {
+    width: 4rem;
+  }
+  .hero .stores {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+@media (max-width: 400px) {
+  .hero h1 {
+    font-size: 4rem;
   }
 }
