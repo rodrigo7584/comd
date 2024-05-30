@@ -7,6 +7,29 @@
   align-items: center;
   gap: 4rem;
 }
+.about .container-image {
+  position: relative;
+}
+.about .container-image .icon {
+  width: 7rem;
+  position: absolute;
+  z-index: 10;
+}
+.about .container-image .icon-1 {
+  top: 5%;
+  right: -5%;
+  animation: float2 3s linear infinite;
+}
+.about .container-image .icon-2 {
+  bottom: -5%;
+  right: 7%;
+  animation: float1 2s linear infinite;
+}
+.about .container-image .icon-3 {
+  top: 25%;
+  left: -7%;
+  animation: float3 2.5s linear infinite;
+}
 .about .image {
   position: relative;
   overflow: hidden;
@@ -50,20 +73,24 @@
     width: 100%;
     order: 1;
   }
-  .about .image {
+  .about .container-image {
     order: 2;
+  }
+  .about .image {
     width: 50rem;
   }
 }
 @media (max-width: 768px) {
   .about .image {
-    order: 2;
     width: 100%;
   }
 }
 @media (max-width: 576px) {
   .about {
     padding: 2rem 0;
+  }
+  .about .container-image .icon {
+    width: 5rem;
   }
   .about .stores {
     flex-direction: column;

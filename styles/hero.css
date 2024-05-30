@@ -73,18 +73,17 @@
 .hero .image img {
   width: 100%;
 }
-/* @keyframes herobg {
+@keyframes herobg {
   0% {
     background-size: 57vw 55vw, 100% 100%;
   }
   50% {
     background-size: 55vw 53vw, 100% 100%;
-
   }
   100% {
     background-size: 57vw 55vw, 100% 100%;
   }
-} */
+}
 @media (max-width: 1200px) {
   .hero {
     padding: calc(5rem + 12.3rem) 0 10rem 0;

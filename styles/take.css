@@ -18,6 +18,24 @@
   justify-content: flex-start;
   gap: 2.5rem;
 }
+.take .container-image {
+  position: relative;
+}
+.take .container-image .icon {
+  width: 7rem;
+  position: absolute;
+  z-index: 10;
+}
+.take .container-image .icon-2 {
+  top: 5%;
+  right: -5%;
+  animation: float2 3s linear infinite;
+}
+.take .container-image .icon-1 {
+  top: -3%;
+  left: 10%;
+  animation: float1 2s linear infinite;
+}
 .take .image {
   position: relative;
   overflow: hidden;
@@ -30,6 +48,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+@media (max-width: 1400px) {
+  .take .image {
+    width: 60rem;
+  }
 }
 @media (max-width: 1200px) {
   .take {
@@ -59,6 +82,9 @@
 @media (max-width: 576px) {
   .take {
     padding: 2rem 0px;
+  }
+  .take .container-image .icon {
+    width: 5rem;
   }
   .take .title {
     font-size: 2.8rem;

@@ -136,7 +136,48 @@ p span {
   }
 }
 /*END SWIPER*/
-
+@keyframes float1 {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+    filter: drop-shadow(4px 3px 5px rgba(0, 0, 0, 0.2));
+  }
+  50% {
+    transform: translate(10px, -10px) scale(0.95);
+    filter: drop-shadow(4px 3px 2px rgba(0, 0, 0, 0.2));
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+    filter: drop-shadow(4px 3px 5px rgba(0, 0, 0, 0.2));
+  }
+}
+@keyframes float2 {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+    filter: drop-shadow(4px 3px 5px rgba(0, 0, 0, 0.2));
+  }
+  50% {
+    transform: translate(10px, 10px) scale(0.95);
+    filter: drop-shadow(4px 3px 2px rgba(0, 0, 0, 0.2));
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+    filter: drop-shadow(4px 3px 5px rgba(0, 0, 0, 0.2));
+  }
+}
+@keyframes float3 {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+    filter: drop-shadow(4px 3px 5px rgba(0, 0, 0, 0.2));
+  }
+  50% {
+    transform: translate(-10px, -10px) scale(0.95);
+    filter: drop-shadow(4px 3px 2px rgba(0, 0, 0, 0.2));
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+    filter: drop-shadow(4px 3px 5px rgba(0, 0, 0, 0.2));
+  }
+}
 @media (max-width: 1400px) {
 }
 @media (max-width: 1200px) {
@@ -157,6 +198,48 @@ p span {
   }
   .title {
     font-size: 4rem;
+  }
+  @keyframes float1 {
+    0% {
+      transform: translate(0px, 0px) scale(1);
+      filter: drop-shadow(4px 3px 5px rgba(0, 0, 0, 0.2));
+    }
+    50% {
+      transform: translate(5px, -5px) scale(0.95);
+      filter: drop-shadow(4px 3px 2px rgba(0, 0, 0, 0.2));
+    }
+    100% {
+      transform: translate(0px, 0px) scale(1);
+      filter: drop-shadow(4px 3px 5px rgba(0, 0, 0, 0.2));
+    }
+  }
+  @keyframes float2 {
+    0% {
+      transform: translate(0px, 0px) scale(1);
+      filter: drop-shadow(4px 3px 5px rgba(0, 0, 0, 0.2));
+    }
+    50% {
+      transform: translate(5px, 5px) scale(0.95);
+      filter: drop-shadow(4px 3px 2px rgba(0, 0, 0, 0.2));
+    }
+    100% {
+      transform: translate(0px, 0px) scale(1);
+      filter: drop-shadow(4px 3px 5px rgba(0, 0, 0, 0.2));
+    }
+  }
+  @keyframes float3 {
+    0% {
+      transform: translate(0px, 0px) scale(1);
+      filter: drop-shadow(4px 3px 5px rgba(0, 0, 0, 0.2));
+    }
+    50% {
+      transform: translate(-5px, -5px) scale(0.95);
+      filter: drop-shadow(4px 3px 2px rgba(0, 0, 0, 0.2));
+    }
+    100% {
+      transform: translate(0px, 0px) scale(1);
+      filter: drop-shadow(4px 3px 5px rgba(0, 0, 0, 0.2));
+    }
   }
 }
 @media (max-width: 400px) {

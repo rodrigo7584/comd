@@ -6,6 +6,29 @@
   justify-content: space-between;
   align-items: center;
 }
+.sellers .container-image {
+  position: relative;
+}
+.sellers .container-image .icon {
+  width: 7rem;
+  position: absolute;
+  z-index: 10;
+}
+.sellers .container-image .icon-1 {
+  top: 0%;
+  right: 18%;
+  animation: float2 3s linear infinite;
+}
+.sellers .container-image .icon-2 {
+  top: 40%;
+  right: 5%;
+  animation: float1 2s linear infinite;
+}
+.sellers .container-image .icon-3 {
+  top: 25%;
+  left: 9%;
+  animation: float3 2.5s linear infinite;
+}
 .sellers .image {
   width: 46.5rem;
 }
@@ -54,13 +77,16 @@
   .sellers .content {
     width: 100%;
   }
-  .sellers .image {
+  .sellers .container-image {
     order: 2;
   }
 }
 @media (max-width: 576px) {
   .sellers {
     padding: 2rem 0;
+  }
+  .sellers .container-image .icon {
+    width: 6rem;
   }
   .sellers .row {
     gap: 3rem;

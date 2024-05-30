@@ -29,6 +29,11 @@
 .win .image img {
   max-width: 100%;
 }
+@media (max-width: 1400px) {
+  .win .title {
+    font-size: 5rem;
+  }
+}
 @media (max-width: 1200px) {
   .win .row {
     padding: 0 5rem;
