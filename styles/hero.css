@@ -1,6 +1,6 @@
 .hero {
   margin-top: -12.3rem;
-  padding: calc(10rem + 12.3rem) 0 10rem 0;
+  padding: calc(5rem + 12.3rem) 0 10rem 0;
   background: url(../img/bg-hero.svg), var(--first-3);
   background-repeat: no-repeat;
   background-size: 57vw 55vw, 100% 100%;
