@@ -16,7 +16,7 @@
   width: 58rem;
   display: flex;
   flex-direction: column;
-  gap: 2.6rem;
+  gap: 1.5rem;
 }
 .hero .users {
   display: flex;
