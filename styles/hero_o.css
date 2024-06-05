@@ -1,8 +1,11 @@
 .hero {
   margin-top: -12.3rem;
   padding: calc(5rem + 12.3rem) 0 10rem 0;
-  background: var(--first-3);
-  overflow: hidden;
+  background: url(../img/bg-hero.svg), var(--first-3);
+  background-repeat: no-repeat;
+  background-size: 57vw 55vw, 100% 100%;
+  background-position: 41vw 50%, center;
+  animation: 2.5s herobg ease-in-out infinite;
 }
 .hero .row {
   display: grid;
@@ -10,8 +13,6 @@
   gap: 5rem;
 }
 .hero .content {
-  position: relative;
-  z-index: 5;
   width: 58rem;
   display: flex;
   flex-direction: column;
@@ -64,40 +65,29 @@
   gap: 2.5rem;
 }
 .hero .image {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 51.2rem;
 }
-.hero .image .photo {
-  position: relative;
-  z-index: 5;
+.hero .image img {
   width: 100%;
 }
-.hero .image .bg {
-  z-index: 1;
-  position: absolute;
-  width: 105rem;
-  left: 50%;
-  top: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  animation: bg-hero 3s ease-in-out infinite;
-}
-@keyframes bg-hero {
+@keyframes herobg {
   0% {
-    width: 105rem;
+    background-size: 57vw 55vw, 100% 100%;
   }
   50% {
-    width: 100rem;
+    background-size: 55vw 53vw, 100% 100%;
   }
   100% {
-    width: 105rem;
+    background-size: 57vw 55vw, 100% 100%;
   }
 }
 @media (max-width: 1200px) {
   .hero {
     padding: calc(5rem + 12.3rem) 0 10rem 0;
+    background-position: 50vw 74%, center;
   }
   .hero .content {
     width: 54rem;
@@ -105,22 +95,12 @@
   .hero .image {
     width: 100%;
   }
-  .hero .image .bg {
-    width: 85rem;
-  }
-  @keyframes bg-hero {
-    0% {
-      width: 85rem;
-    }
-    50% {
-      width: 80rem;
-    }
-    100% {
-      width: 85rem;
-    }
-  }
 }
 @media (max-width: 992px) {
+  .hero {
+    background-position: center 100%, center;
+    background-size: 100vw 100vw, 100% 100%;
+  }
   .hero .row {
     grid-template-columns: 1fr;
     gap: 10rem;
@@ -128,12 +108,23 @@
   .hero .content {
     width: 100%;
   }
-  .hero .image .photo {
+  .hero .image img {
     width: 60rem;
+  }
+  @keyframes herobg {
+    0% {
+      background-size: 100vw 100vw, 100% 100%;
+    }
+    50% {
+      background-size: 97vw 97vw, 100% 100%;
+    }
+    100% {
+      background-size: 100vw 100vw, 100% 100%;
+    }
   }
 }
 @media (max-width: 768px) {
-  .hero .image .photo {
+  .hero .image img {
     width: 95%;
   }
 }
@@ -161,20 +152,6 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
-  }
-  .hero .image .bg {
-    width: 70rem;
-  }
-  @keyframes bg-hero {
-    0% {
-      width: 70rem;
-    }
-    50% {
-      width: 67rem;
-    }
-    100% {
-      width: 70rem;
-    }
   }
 }
 @media (max-width: 400px) {
